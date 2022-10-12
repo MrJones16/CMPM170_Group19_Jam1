@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{865526da-9446-487e-a852-4aab5f568fe3}">
+		<property name="assetPath">
+			<value>guitar_segment_2_outro.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>7.6766666666666667</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{55b98c08-42fe-4358-98ce-3d8206006e75}</destination>
+		</relationship>
+	</object>
+</objects>

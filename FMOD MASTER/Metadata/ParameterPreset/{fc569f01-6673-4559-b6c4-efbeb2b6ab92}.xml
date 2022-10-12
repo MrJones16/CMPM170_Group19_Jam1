@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{fc569f01-6673-4559-b6c4-efbeb2b6ab92}">
+		<property name="name">
+			<value>IsMPress1</value>
+		</property>
+		<relationship name="folder">
+			<destination>{9ce9808f-4f3c-48b1-9316-d87d5f53570a}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{955aa1b0-dfab-4845-93fa-33b22b218052}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{955aa1b0-dfab-4845-93fa-33b22b218052}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>
