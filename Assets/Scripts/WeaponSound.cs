@@ -16,7 +16,7 @@ public class WeaponSound : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0) && !soundPlaying && 
+        if (Input.GetKeyDown(KeyCode.K) && !soundPlaying && 
         (!Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.A) 
         && !Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.D))){
             eventEmitterRef.Play();

@@ -10,28 +10,18 @@ public class EnemySpawner : MonoBehaviour
    public float movementInterval = 1f;
    public List<GameObject> spawnPositions;
    public GameObject enemy;
-   public float countdownTimer = 5f;
 
    public float spawnInterval = 2f;
     // Start is called before the first frame update
-   private bool gameStarted = false;
 
     void Start()
     {
         savedTime = Time.time;
     }
 
-    public void StartCountdown(){
-        gameStarted = true;
-        savedTime = Time.time + countdownTimer;
-    }
-
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (gameStarted == false){
-            return;
-        }
         if (Time.time >= savedTime + spawnInterval){
             savedTime = Time.time;
             SpawnEnemy();

@@ -28,7 +28,5 @@ public class gameBegin : MonoBehaviour
         Canvas cvs = theCanvas.GetComponent<Canvas>();
         cvs.gameObject.SetActive(false);
         //musicSystem.gameStartedMusic();
-        EnemySpawner es = GameObject.Find("EnemySpawner").GetComponent<EnemySpawner>();
-        es.StartCountdown();
     }
 }

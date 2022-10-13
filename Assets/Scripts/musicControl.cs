@@ -17,25 +17,29 @@ public class musicControl : MonoBehaviour
         BGM.start();
     }
 
-    //public void gameStartedMusic(){
-        //BGM.setParameterValue("gameStart", 1f);
-    //}
+    public void gameStartedMusic(){
+        BGM.setParameterByName("gameStart", 1f);
+    }
 
-    // public void lowEnemiesMusic(){
-    //     BGM.setParameterValue("firstWave", 1f);
-    // }
+    public void lowEnemiesMusic(){
+        BGM.setParameterByName("lowDensity", 1f);
+    }
 
-    // public void medEnemiesMusic(){
-    //     BGM.setParameterValue("secondWave", 1f);
-    // }
+    public void medEnemiesMusic(){
+        BGM.setParameterByName("midDensity", 1f);
+    }
 
-    // public void highEnemiesMusic(){
-    //     BGM.setParameterValue("thirdWave", 1f);
-    // }
+    public void highEnemiesMusic(){
+        BGM.setParameterByName("highDensity", 1f);
+    }
 
-    // public void lowHPlowMusic(){
-    //     BGM.setParameterValue("lowHPfirstWave", 1f);
-    // }
+    public void endMusic(){
+        BGM.setParameterByName("end", 1f);
+        BGM.setParameterByName("gameStart", 0f);
+        BGM.setParameterByName("lowDensity", 0f);
+        BGM.setParameterByName("midDensity", 0f);
+        BGM.setParameterByName("highDensity", 0f);
+    }
 
     // public void lowHPmedMusic(){
     //     BGM.setParameterValue("lowHPsecondWave", 1f);

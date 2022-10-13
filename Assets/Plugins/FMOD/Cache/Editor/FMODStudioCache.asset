@@ -165,10 +165,14 @@ MonoBehaviour:
   Path: FMOD MASTER/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
+<<<<<<< HEAD
   lastModified: 638012686718138074
+=======
+  lastModified: 638012750472689680
+>>>>>>> fe1bddccb38554e60f6f73276665218b0fd23e91
   FileSizes:
   - Name: Desktop
-    Value: 1220
+    Value: 1216
   Exists: 1
 --- !u!114 &-5051194683281406852
 MonoBehaviour:
@@ -300,7 +304,11 @@ MonoBehaviour:
   - {fileID: 2599914846972989541}
   StringsBanks:
   - {fileID: -5401963728919804989}
+<<<<<<< HEAD
   cacheTime: 638012686718138074
+=======
+  cacheTime: 638012750472689680
+>>>>>>> fe1bddccb38554e60f6f73276665218b0fd23e91
   cacheVersion: 131593
 --- !u!114 &1463430069813701206
 MonoBehaviour:
@@ -344,10 +352,14 @@ MonoBehaviour:
   Path: FMOD MASTER/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
+<<<<<<< HEAD
   lastModified: 638012686718128097
+=======
+  lastModified: 638012750472659722
+>>>>>>> fe1bddccb38554e60f6f73276665218b0fd23e91
   FileSizes:
   - Name: Desktop
-    Value: 1364224
+    Value: 1364320
   Exists: 1
 --- !u!114 &4253552696609885166
 MonoBehaviour:
@@ -359,9 +371,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/AdaptiveMusic/endGame
+  m_Name: parameter:/AdaptiveMusic/end
   m_EditorClassIdentifier: 
-  Name: endGame
+  Name: end
   StudioPath: 
   Min: 0
   Max: 1

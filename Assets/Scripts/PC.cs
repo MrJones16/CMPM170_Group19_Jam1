@@ -8,6 +8,11 @@ public class PC : MonoBehaviour
     public float speed;
     public Rigidbody rigidBody;
     public Animator animator;
+    public Collider sword;
+
+    void Start(){
+        Physics.IgnoreCollision(sword.GetComponent<Collider>(), GetComponent<Collider>());
+    }
 
     void Update()
     {  
