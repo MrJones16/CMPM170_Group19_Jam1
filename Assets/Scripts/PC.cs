@@ -17,7 +17,7 @@ public class PC : MonoBehaviour
         var movement = new Vector3(horizontal, 0, vertical);
 
         rigidBody.velocity = movement * speed;
-
+        
         // Added to update the animator.
         animator.SetFloat("HM", horizontal);
         animator.SetFloat("VM", vertical);

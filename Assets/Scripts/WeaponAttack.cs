@@ -15,7 +15,8 @@ public class WeaponAttack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.K)){
+        //Weapon Swing
+        if((Input.GetMouseButtonDown(0))){
             animator.SetTrigger("Attack");
         }
     }
