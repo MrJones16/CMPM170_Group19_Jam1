@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{813c60b9-daba-468b-ba3c-17529cad6b5a}">
+		<property name="assetPath">
+			<value>guitar_segment_1_intro.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>9.3542500000000004</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{55b98c08-42fe-4358-98ce-3d8206006e75}</destination>
+		</relationship>
+	</object>
+</objects>

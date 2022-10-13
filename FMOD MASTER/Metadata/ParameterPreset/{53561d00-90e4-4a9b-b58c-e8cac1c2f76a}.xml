@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{53561d00-90e4-4a9b-b58c-e8cac1c2f76a}">
+		<property name="name">
+			<value>midDensity</value>
+		</property>
+		<relationship name="folder">
+			<destination>{9ce9808f-4f3c-48b1-9316-d87d5f53570a}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{3a6b5280-9410-498d-9ddb-385622df4ef4}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{3a6b5280-9410-498d-9ddb-385622df4ef4}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>
