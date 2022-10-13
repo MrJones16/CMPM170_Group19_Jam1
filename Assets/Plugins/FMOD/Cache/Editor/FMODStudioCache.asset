@@ -166,7 +166,11 @@ MonoBehaviour:
   Name: Master.strings
   StudioPath: bank:/Master.strings
 <<<<<<< HEAD
+<<<<<<< HEAD
   lastModified: 638012686718138074
+=======
+  lastModified: 638012750472689680
+>>>>>>> fe1bddccb38554e60f6f73276665218b0fd23e91
 =======
   lastModified: 638012750472689680
 >>>>>>> fe1bddccb38554e60f6f73276665218b0fd23e91
@@ -305,7 +309,11 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: -5401963728919804989}
 <<<<<<< HEAD
+<<<<<<< HEAD
   cacheTime: 638012686718138074
+=======
+  cacheTime: 638012750472689680
+>>>>>>> fe1bddccb38554e60f6f73276665218b0fd23e91
 =======
   cacheTime: 638012750472689680
 >>>>>>> fe1bddccb38554e60f6f73276665218b0fd23e91
@@ -353,7 +361,11 @@ MonoBehaviour:
   Name: Master
   StudioPath: bank:/Master
 <<<<<<< HEAD
+<<<<<<< HEAD
   lastModified: 638012686718128097
+=======
+  lastModified: 638012750472659722
+>>>>>>> fe1bddccb38554e60f6f73276665218b0fd23e91
 =======
   lastModified: 638012750472659722
 >>>>>>> fe1bddccb38554e60f6f73276665218b0fd23e91
