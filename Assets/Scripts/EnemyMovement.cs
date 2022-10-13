@@ -33,4 +33,13 @@ public class EnemyMovement : MonoBehaviour
         direction.Normalize();
         rb.AddForce(direction*enemyspawner.movementSpeed*100);
     }
+
+    void OnTriggerEnter(Collider collider)
+    {
+        if(collider.gameObject.tag == "Player"){
+            Debug.Log("Collided w/ player");
+            PlayerHealth ph = collider.gameObject.GetComponent<PlayerHealth>();
+            ph.PlayerHit(1);
+        }
+    }
 }
