@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
-	<object class="AudioFile" id="{813c60b9-daba-468b-ba3c-17529cad6b5a}">
+	<object class="AudioFile" id="{47e55806-1292-4d6f-a65b-6cfe2b9f5ffe}">
 		<property name="assetPath">
-			<value>guitar_segment_1_intro.wav</value>
-		</property>
-		<property name="isStreaming">
-			<value>true</value>
+			<value>steps_sand.wav</value>
 		</property>
 		<property name="frequencyInKHz">
-			<value>48</value>
+			<value>44.0999985</value>
 		</property>
 		<property name="channelCount">
 			<value>2</value>
 		</property>
 		<property name="length">
-			<value>9.3542500000000004</value>
+			<value>1.2901587301587301</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{55b98c08-42fe-4358-98ce-3d8206006e75}</destination>
