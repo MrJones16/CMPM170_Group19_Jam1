@@ -18,7 +18,8 @@ public class PlayerHealth : MonoBehaviour
     public killCount killCount;
     public Text healthCounter;
     public Text gameOverText;
-
+    public Animator animator;
+   
     private PC ph;
 
     void Start()
@@ -40,6 +41,7 @@ public class PlayerHealth : MonoBehaviour
         {
             //Current Health decreases by attack amount
             CurrentHealth -= damage;
+            
             FMOD.Studio.EventInstance playerHurtSound;
             playerHurtSound = FMODUnity.RuntimeManager.CreateInstance("event:/playerHurt");
             playerHurtSound.start();
@@ -47,12 +49,13 @@ public class PlayerHealth : MonoBehaviour
             {
                 CurrentHealth = 0;
                 //Death Animation and Sound Plays here
+                animator.SetTrigger("Death");
                 musicSystem.endMusic();
                 Debug.Log("PlayerHastDied");
                 StartCoroutine(restart());
                 return;
             }
-
+            
             StartCoroutine(Iframes());
         }
     }
@@ -73,10 +76,11 @@ public class PlayerHealth : MonoBehaviour
     {
         Debug.Log("Player turned invincible!");
         isInvulnarable = true;
+        animator.SetTrigger("Hurt");
         for (float i = 0; i < invincibilityDurationSeconds; i += invincibilityDeltaTime)
         {
             // Alternate between 0 and 1 scale to simulate flashing
-            if (model.transform.localScale == Vector3.one)
+            if (model.transform.localScale == new Vector3(0.45f,0.45f,0.45f))
             {
                 ph.speed = 6;
                 ScaleModelTo(Vector3.zero);
@@ -84,13 +88,13 @@ public class PlayerHealth : MonoBehaviour
             else
             {
                 ph.speed = 6;
-                ScaleModelTo(Vector3.one);
+                ScaleModelTo(new Vector3(0.45f,0.45f,0.45f));
             }
             yield return new WaitForSeconds(invincibilityDeltaTime);
         }
 
         isInvulnarable = false;
-        ScaleModelTo(Vector3.one);
+        ScaleModelTo(new Vector3(0.45f,0.45f,0.45f));
         ph.speed = 4;
         Debug.Log("Player is no longer invincible!");
     }
