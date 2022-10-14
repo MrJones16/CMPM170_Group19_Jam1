@@ -11,12 +11,15 @@ public class PlayerHealth : MonoBehaviour
     public int CurrentHealth;
     private bool isInvulnarable;
     // Start is called before the first frame update
+    public musicControl musicSystem;
 
+    private PC ph;
 
     void Start()
     {
         CurrentHealth = MaxHealth;
         isInvulnarable = false;
+        ph = gameObject.GetComponent<PC>();
     }
 
     public void PlayerHit(int damage)
@@ -27,11 +30,13 @@ public class PlayerHealth : MonoBehaviour
         {
             //Current Health decreases by attack amount
             CurrentHealth -= damage;
-
+            
+            
             if (CurrentHealth <= 0)
             {
                 CurrentHealth = 0;
-                // Broadcast some sort of death event here before returning
+                //Death Animation and Sound Plays here
+                musicSystem.endMusic();
                 Debug.Log("PlayerHastDied");
                 return;
             }
@@ -54,10 +59,12 @@ public class PlayerHealth : MonoBehaviour
             // Alternate between 0 and 1 scale to simulate flashing
             if (model.transform.localScale == Vector3.one)
             {
+                ph.speed = 100000;
                 ScaleModelTo(Vector3.zero);
             }
             else
             {
+                ph.speed = 10;
                 ScaleModelTo(Vector3.one);
             }
             yield return new WaitForSeconds(invincibilityDeltaTime);
@@ -65,6 +72,7 @@ public class PlayerHealth : MonoBehaviour
 
         isInvulnarable = false;
         ScaleModelTo(Vector3.one);
+        ph.speed = 10;
         Debug.Log("Player is no longer invincible!");
     }
 }
