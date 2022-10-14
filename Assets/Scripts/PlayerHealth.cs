@@ -59,12 +59,12 @@ public class PlayerHealth : MonoBehaviour
             // Alternate between 0 and 1 scale to simulate flashing
             if (model.transform.localScale == Vector3.one)
             {
-                ph.speed = 100000;
+                ph.speed = 6;
                 ScaleModelTo(Vector3.zero);
             }
             else
             {
-                ph.speed = 10;
+                ph.speed = 6;
                 ScaleModelTo(Vector3.one);
             }
             yield return new WaitForSeconds(invincibilityDeltaTime);
@@ -72,7 +72,7 @@ public class PlayerHealth : MonoBehaviour
 
         isInvulnarable = false;
         ScaleModelTo(Vector3.one);
-        ph.speed = 10;
+        ph.speed = 4;
         Debug.Log("Player is no longer invincible!");
     }
 }

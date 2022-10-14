@@ -9,19 +9,35 @@ public class PC : MonoBehaviour
     public Rigidbody rigidBody;
     public Animator animator;
     public Collider sword;
+    public GameObject worldreference;
+    public Vector3 worldPosition;
+    Plane plane = new Plane(Vector3.up, 0);
 
     void Start(){
         Physics.IgnoreCollision(sword.GetComponent<Collider>(), GetComponent<Collider>());
     }
-
     void Update()
+    {
+        float distance;
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        if (plane.Raycast(ray, out distance))
+        {
+            worldPosition = ray.GetPoint(distance);
+        }
+        rigidBody = gameObject.GetComponent<Rigidbody>();
+        worldPosition += new Vector3(0,gameObject.transform.position.y,0);
+        gameObject.transform.LookAt(worldPosition);
+    }
+
+    void FixedUpdate()
     {  
         var horizontal = Input.GetAxisRaw("Horizontal");
         var vertical = Input.GetAxisRaw("Vertical");
-
-        var movement = new Vector3(horizontal, 0, vertical);
-
-        rigidBody.velocity = movement * speed;
+        Vector3 forward = worldreference.transform.forward * vertical;
+        Vector3 right = worldreference.transform.right * horizontal;
+        Vector3 movement = forward + right;
+        movement.Normalize();
+        transform.position += movement *speed * Time.deltaTime;
         
         // Added to update the animator.
         animator.SetFloat("HM", horizontal);
