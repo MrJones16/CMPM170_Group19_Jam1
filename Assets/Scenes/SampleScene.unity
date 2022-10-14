@@ -123,6 +123,24 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &4903531 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -7640558969779515294, guid: a31096249f69bf541956a4d59c24d137, type: 3}
+  m_PrefabInstance: {fileID: 293953097}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &4903535
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4903531}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.020000007, y: 0.02, z: 0.020000158}
+  m_Center: {x: 1.1641532e-10, y: 2.3283064e-10, z: -0.00000059604645}
 --- !u!4 &15456640 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1852576806548013000, guid: f652717414dffbd469288e78a242e92a, type: 3}
@@ -421,6 +439,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3a70d840d298c9429e5c0c2262caa97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  musicSystem: {fileID: 1541731339}
+  enemySpawner: {fileID: 1753812147}
   kills: 0
 --- !u!65 &323018615
 BoxCollider:
@@ -435,6 +455,24 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.45359868, y: 0.36258793, z: 2.8652775}
   m_Center: {x: -0.17672879, y: -0.07667114, z: 0.91127604}
+--- !u!1 &394736637 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -1599826595754709761, guid: a31096249f69bf541956a4d59c24d137, type: 3}
+  m_PrefabInstance: {fileID: 293953097}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &394736641
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 394736637}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.020000007, y: 0.020000009, z: 0.020000316}
+  m_Center: {x: 0, y: -2.3283064e-10, z: -0.00000059604645}
 --- !u!1 &613288798
 GameObject:
   m_ObjectHideFlags: 0
@@ -514,7 +552,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &704703475
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1121,6 +1159,24 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.017320512, y: 0.02, z: 0.019999996}
   m_Center: {x: 0, y: -5.820766e-11, z: 0}
+--- !u!1 &1249849313 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8416272007918961125, guid: a31096249f69bf541956a4d59c24d137, type: 3}
+  m_PrefabInstance: {fileID: 293953097}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1249849317
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1249849313}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.020000005, y: 0.020000009, z: 0.02000024}
+  m_Center: {x: 4.656613e-10, y: 0, z: 0.00000023841858}
 --- !u!1 &1326258184
 GameObject:
   m_ObjectHideFlags: 0
@@ -1371,6 +1427,24 @@ Transform:
   m_Father: {fileID: 1508257677}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1377788238 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -516098083770646512, guid: a31096249f69bf541956a4d59c24d137, type: 3}
+  m_PrefabInstance: {fileID: 293953097}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1377788242
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1377788238}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.020000007, y: 0.020000009, z: 0.020000316}
+  m_Center: {x: 4.656613e-10, y: -9.313226e-10, z: 0.00000071525574}
 --- !u!1 &1381902617
 GameObject:
   m_ObjectHideFlags: 0
@@ -1910,7 +1984,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cc7ababbf8c1c94599417a1a0de8f08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  musicSystem: {fileID: 0}
+  musicSystem: {fileID: 1541731339}
   gameStarted: 0
   startButton: {fileID: 1459564911}
   theCanvas: {fileID: 1562199826}
@@ -1945,7 +2019,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 1811382848}
   movementSpeed: 2
-  movementInterval: 1
+  movementInterval: 2
   spawnPositions:
   - {fileID: 1905473615}
   - {fileID: 678089566}
@@ -1954,6 +2028,7 @@ MonoBehaviour:
   - {fileID: 1057694552}
   - {fileID: 1381902617}
   enemy: {fileID: 698679782516361488, guid: 7b589adfbc899fb4691ed8dd9e347c46, type: 3}
+  spawnDelay: 5
   spawnInterval: 2
 --- !u!4 &1753812148
 Transform:
@@ -2266,6 +2341,24 @@ Transform:
   m_Father: {fileID: 1508257677}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2036590319 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -7146521406498821007, guid: a31096249f69bf541956a4d59c24d137, type: 3}
+  m_PrefabInstance: {fileID: 293953097}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &2036590323
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2036590319}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.020000005, y: 0.020000009, z: 0.02000024}
+  m_Center: {x: -4.656613e-10, y: 0, z: -0.00000047683716}
 --- !u!1 &2125024766
 GameObject:
   m_ObjectHideFlags: 0
@@ -2332,3 +2425,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2126468731 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -8391222552659086748, guid: a31096249f69bf541956a4d59c24d137, type: 3}
+  m_PrefabInstance: {fileID: 293953097}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &2126468735
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2126468731}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.020000007, y: 0.02, z: 0.020000158}
+  m_Center: {x: 0, y: 0, z: 0.00000023841858}
