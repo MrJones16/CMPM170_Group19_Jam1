@@ -30,8 +30,9 @@ public class PlayerHealth : MonoBehaviour
         {
             //Current Health decreases by attack amount
             CurrentHealth -= damage;
-            
-            
+            FMOD.Studio.EventInstance playerHurtSound;
+            playerHurtSound = FMODUnity.RuntimeManager.CreateInstance("event:/playerHurt");
+            playerHurtSound.start();
             if (CurrentHealth <= 0)
             {
                 CurrentHealth = 0;
@@ -53,7 +54,6 @@ public class PlayerHealth : MonoBehaviour
     {
         Debug.Log("Player turned invincible!");
         isInvulnarable = true;
-
         for (float i = 0; i < invincibilityDurationSeconds; i += invincibilityDeltaTime)
         {
             // Alternate between 0 and 1 scale to simulate flashing

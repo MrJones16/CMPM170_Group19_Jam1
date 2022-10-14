@@ -37,6 +37,9 @@ public class EnemySpawner : MonoBehaviour
         }
     }
     private void SpawnEnemy(){
+        FMOD.Studio.EventInstance spawnSound;
+        spawnSound = FMODUnity.RuntimeManager.CreateInstance("event:/EnemySpawn");
+        spawnSound.start();
         int randomNumber = Random.Range(0, 6);
         Instantiate(enemy, spawnPositions[randomNumber].transform.position, transform.rotation);
     }
