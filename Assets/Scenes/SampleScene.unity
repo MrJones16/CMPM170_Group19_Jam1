@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.447608, g: 0.497577, b: 0.57535446, a: 1}
+  m_IndirectSpecularColor: {r: 0.4476083, g: 0.49757755, b: 0.5753555, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1192,7 +1192,7 @@ MonoBehaviour:
   invincibilityDurationSeconds: 3
   invincibilityDeltaTime: 0.2
   model: {fileID: 981631836}
-  MaxHealth: 1
+  MaxHealth: 5
   CurrentHealth: 10
   musicSystem: {fileID: 1541731339}
   killCounter: {fileID: 2034959982}
