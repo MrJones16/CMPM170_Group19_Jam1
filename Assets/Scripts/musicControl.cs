@@ -40,6 +40,9 @@ public class musicControl : MonoBehaviour
         BGM.setParameterByName("midDensity", 0f);
         BGM.setParameterByName("highDensity", 0f);
     }
+    public void stopMusic(){
+        BGM.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+    }
 
     // public void lowHPmedMusic(){
     //     BGM.setParameterValue("lowHPsecondWave", 1f);

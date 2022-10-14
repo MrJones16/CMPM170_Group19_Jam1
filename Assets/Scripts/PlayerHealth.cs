@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -12,6 +14,10 @@ public class PlayerHealth : MonoBehaviour
     private bool isInvulnarable;
     // Start is called before the first frame update
     public musicControl musicSystem;
+    public Text killCounter;
+    public killCount killCount;
+    public Text healthCounter;
+    public Text gameOverText;
 
     private PC ph;
 
@@ -20,6 +26,10 @@ public class PlayerHealth : MonoBehaviour
         CurrentHealth = MaxHealth;
         isInvulnarable = false;
         ph = gameObject.GetComponent<PC>();
+    }
+    private void Update() {
+        killCounter.text = "Kills: " + killCount.kills;
+        healthCounter.text = "Health: " + CurrentHealth;
     }
 
     public void PlayerHit(int damage)
@@ -39,11 +49,20 @@ public class PlayerHealth : MonoBehaviour
                 //Death Animation and Sound Plays here
                 musicSystem.endMusic();
                 Debug.Log("PlayerHastDied");
+                StartCoroutine(restart());
                 return;
             }
 
             StartCoroutine(Iframes());
         }
+    }
+    private IEnumerator restart(){
+        gameOverText.text = "GAME OVER";
+        //wait 10 seconds
+        yield return new WaitForSeconds(10);
+        //now restart the scene
+        musicSystem.stopMusic();
+        SceneManager.LoadScene("SampleScene");
     }
     private void ScaleModelTo(Vector3 scale)
     {
