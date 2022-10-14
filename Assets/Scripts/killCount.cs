@@ -13,9 +13,10 @@ public class killCount : MonoBehaviour
             musicSystem.medEnemiesMusic();
             enemySpawner.setIntervals(1f);
         }
-        if (kills ==45){
+        if (kills ==50){
             musicSystem.highEnemiesMusic();
-            enemySpawner.setIntervals(0.5f);
+            enemySpawner.movementInterval = .5f;
+            enemySpawner.movementSpeed = 1.5f;
         }
     }
 }
