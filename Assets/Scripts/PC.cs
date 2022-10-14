@@ -36,12 +36,14 @@ public class PC : MonoBehaviour
         Vector3 forward = worldreference.transform.forward * vertical;
         Vector3 right = worldreference.transform.right * horizontal;
         Vector3 movement = forward + right;
+        Vector3 direction = transform.forward - movement;
         movement.Normalize();
         transform.position += movement *speed * Time.deltaTime;
         
+        
         // Added to update the animator.
-        animator.SetFloat("HM", horizontal);
-        animator.SetFloat("VM", vertical);
+        animator.SetFloat("HM", direction.x);
+        animator.SetFloat("VM", direction.z);
         animator.SetFloat("Speed", movement.sqrMagnitude);
     }
 }
