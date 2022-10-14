@@ -5,7 +5,9 @@ using UnityEngine;
 public class swordCollisionHandler : MonoBehaviour
 {
     void OnTriggerEnter(Collider collider){
-        collider.gameObject.GetComponent<killCount>().onKill();
-        Destroy(this.gameObject);
+        if(collider.gameObject.name == "2Hand-Sword"){
+            collider.gameObject.GetComponent<killCount>().onKill();
+            Destroy(this.gameObject);
+        }
     }
 }
