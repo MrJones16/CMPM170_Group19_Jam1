@@ -27,6 +27,7 @@ public class EnemyMovement : MonoBehaviour
             savedTime = Time.time;
             Move();
         }
+        transform.LookAt(new Vector3(player.transform.position.x, transform.position.y, player.transform.position.z));
     }
     private void Move(){
         Vector3 direction = (player.transform.position - this.transform.position);

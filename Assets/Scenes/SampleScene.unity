@@ -2225,9 +2225,6 @@ MonoBehaviour:
   startButton: {fileID: 1459564911}
   theCanvas: {fileID: 1562199826}
   secondCanvas: {fileID: 1370021472}
-  killCounter: {fileID: 0}
-  killCount: {fileID: 0}
-  healthCounter: {fileID: 0}
 --- !u!1 &1753812146
 GameObject:
   m_ObjectHideFlags: 0
@@ -2267,7 +2264,7 @@ MonoBehaviour:
   - {fileID: 1102750499}
   - {fileID: 1057694552}
   - {fileID: 1381902617}
-  enemy: {fileID: 698679782516361488, guid: 7b589adfbc899fb4691ed8dd9e347c46, type: 3}
+  enemy: {fileID: 6861382724204386758, guid: 4d88e26e76e40b84c896aeb36cf22e21, type: 3}
   spawnDelay: 5
   spawnInterval: 2
 --- !u!4 &1753812148
