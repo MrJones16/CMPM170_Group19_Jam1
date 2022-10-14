@@ -19,7 +19,11 @@ GameObject:
   m_Name: Enemy
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_TagString: Enemy
+=======
+  m_TagString: enemy
+>>>>>>> fe1bddccb38554e60f6f73276665218b0fd23e91
 =======
   m_TagString: enemy
 >>>>>>> fe1bddccb38554e60f6f73276665218b0fd23e91
